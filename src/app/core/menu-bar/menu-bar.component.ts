@@ -25,8 +25,9 @@ export class MenuBarComponent implements OnInit {
                     separator:true
                   },
                   {
-                      label:'Visualizar normas',
-                      icon:'pi pi-bars'
+                      label:'Listar normas',
+                      icon:'pi pi-bars',
+                      routerLink: ['/lista-normas']
                   },
                   {
                       separator:true
