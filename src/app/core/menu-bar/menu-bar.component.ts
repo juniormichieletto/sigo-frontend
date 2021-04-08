@@ -20,6 +20,7 @@ export class MenuBarComponent implements OnInit {
                   {
                       label:'Cadastrar/Alterar norma',
                       icon:'pi pi-fw pi-bookmark',
+                      routerLink: ['/norma']
                   },
                   {
                     separator:true
