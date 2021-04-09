@@ -7,12 +7,10 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { MenubarModule } from 'primeng/menubar';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
-import { NormaComponent } from './norma/norma.component';
 
 @NgModule({
   declarations: [
-    MenuBarComponent,
-    NormaComponent
+    MenuBarComponent
   ],
   imports: [
     CommonModule,

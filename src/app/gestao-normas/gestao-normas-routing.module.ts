@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NormaComponent } from '../core/norma/norma.component';
 import { ListaNormasComponent } from './lista-normas/lista-normas.component';
+import { NormaComponent } from './norma/norma.component';
 
 const routes: Routes = [
   {
@@ -9,7 +9,7 @@ const routes: Routes = [
     component: ListaNormasComponent
  },
  {
-   path: 'norma',
+   path: 'norma/:id',
    component: NormaComponent
  }
 ];
