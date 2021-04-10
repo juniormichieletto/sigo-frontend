@@ -1,1 +1,35 @@
-<p>norma works!</p>
+<div class="container" #targetBloquedPanel>
+    <form [formGroup]="normaFormGroup" autocomplete="off" (ngSubmit)="onSubmit()">
+        
+        <div class="p-field p-grid">
+            <label for="codigo" class="p-col-fixed" style="width:100px">Código</label>
+            <div class="p-col">
+                <input id="codigo" type="text" pInputText formControlName="codigo"> 
+            </div>
+        </div>
+        <div class="p-field p-grid">
+            <label for="nome" class="p-col-fixed" style="width:100px">Nome</label>
+            <div class="p-col">
+                <input id="nome" type="text" pInputText formControlName="nome"> 
+            </div>
+        </div>
+        <div class="p-field p-grid">
+            <label for="descricaoCompleta" class="p-col-fixed" style="width:100px">Descricao completa</label>
+            <div class="p-col">
+                <input id="descricaoCompleta" type="text" pInputText formControlName="descricaoCompleta"> 
+            </div>
+        </div>
+
+        <p>
+            <button pButton
+                type="submit"
+                label="Salvar"
+                icon="pi pi-check"
+                [disabled]="normaFormGroup.invalid && normaFormGroup.pristine">
+            </button>
+        </p>
+        <p *ngIf="loading">
+            <p-progressBar mode="indeterminate"></p-progressBar>
+        </p>
+    </form>
+</div>

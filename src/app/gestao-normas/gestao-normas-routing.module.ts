@@ -7,11 +7,15 @@ const routes: Routes = [
   {
     path: 'lista-normas',
     component: ListaNormasComponent
- },
- {
-   path: 'norma/:id',
-   component: NormaComponent
- }
+  },
+  {
+    path: 'norma',
+    component: NormaComponent
+  },
+  {
+    path: 'norma/:id',
+    component: NormaComponent
+  }
 ];
 
 @NgModule({

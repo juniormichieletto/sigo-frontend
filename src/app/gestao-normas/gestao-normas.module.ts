@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
@@ -16,6 +16,7 @@ import { ProgressBarModule } from 'primeng/progressbar';
 import { SliderModule } from 'primeng/slider';
 import { TableModule } from 'primeng/table';
 import { ToastModule } from 'primeng/toast';
+import { SharedModule } from '../shared/shared.module';
 import { GestaoNormasRoutingModule } from './gestao-normas-routing.module';
 import { ListaNormasComponent } from './lista-normas/lista-normas.component';
 import { NormaComponent } from './norma/norma.component';
@@ -33,22 +34,24 @@ import { NormaComponent } from './norma/norma.component';
     BrowserAnimationsModule,
     TableModule,
     CalendarModule,
-		SliderModule,
-		DialogModule,
-		MultiSelectModule,
-		ContextMenuModule,
-		DropdownModule,
-		ButtonModule,
-		ToastModule,
+    SliderModule,
+    DialogModule,
+    MultiSelectModule,
+    ContextMenuModule,
+    DropdownModule,
+    ButtonModule,
+    ToastModule,
     InputTextModule,
     ProgressBarModule,
 
+    SharedModule,
     CommonModule,
     RouterModule,
     HttpClientModule,
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
 
     GestaoNormasRoutingModule
   ]
